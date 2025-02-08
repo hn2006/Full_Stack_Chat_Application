@@ -1,6 +1,6 @@
 # 🔥 Chat Application
 
-![Chat Application](https://your-image-url.com)
+![Chat Application](https://portfolio-werbsite2006123acd.vercel.app/images/projects/chat.png)
 
 ## 🚀 Real-Time Chat Application
 
