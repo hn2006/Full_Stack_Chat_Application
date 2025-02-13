@@ -9,7 +9,7 @@ import {context} from './context';
 
 function App() {
 
-  axios.defaults.baseURL = 'http://localhost:8000';
+  axios.defaults.baseURL = 'https://chat-application-backend-4my6.onrender.com';
   axios.defaults.withCredentials = true;
 
   const [User, setUser] = useState(null);
