@@ -9,10 +9,7 @@ const dotenv=require('dotenv').config();
 const cors=require('cors');
 const server = require('http').createServer(app);
 
-app.use(cors({
-    credentials:true,
-    origin:process.env.CLIENT_URL
-}));
+app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -38,13 +35,7 @@ app.use('/', (req, res) => {
 })
 
 const users=new Map();
-const io=require('socket.io')(server,{
-
-    cors:{
-        origin:process.env.CLIENT_URL,
-        credentials:true
-    }
-});
+const io=require('socket.io')(server);
 
 io.on('connection',(socket)=>{
 
